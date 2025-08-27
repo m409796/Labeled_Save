@@ -1,0 +1,1606 @@
+fileFormatVersion: 2
+guid: 845bb2fe1d71c2b4497420b9cf3c1a46
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Circles empty_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1526
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752a79876fa3f434f9adaa3ae16a59d6
+      internalID: -3836880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_2
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 1680
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437aad80d63d18649a2afef9e05e26b6
+      internalID: 2087219554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_4
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1680
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2177cceaabc1be944a64ea23f1c81c8d
+      internalID: 1130304315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_5
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1665
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cd2309b22b27348a0e99b52a56217e
+      internalID: 1573259074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_6
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1684
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eca0c52cf247014f98b6eab00c57442
+      internalID: 1298830112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_7
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1626
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5bd4f5486085749975012d8a15721a
+      internalID: 111986426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_8
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 1637
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f11410a1984be40afb1cceea9868f3
+      internalID: -176333344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_9
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 1616
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140520eaf72fdef45b196af95aab4ae3
+      internalID: 619496854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_12
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1452
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdae7186af7f1c548b3fb0e01e4cd0e3
+      internalID: 496431823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_13
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1502
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f6fd3bbc253174e9628fc8987d3aa6
+      internalID: 179909087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1553
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298e59eb068d3aa4fb3241a3720ccac8
+      internalID: 365875390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_16
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 1470
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6169356307a8e61439cc288fcc556a6a
+      internalID: 1336177165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_17
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 1454
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5e36a3bc6d01140aba850cb8b25d2c
+      internalID: 1806392400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_18
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 1552
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526dd75357dec5f4a9be09f0da49b507
+      internalID: -991333461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_19
+      rect:
+        serializedVersion: 2
+        x: 3070
+        y: 1536
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a57d8609c4347449a7d0fe9fe7c1cd
+      internalID: -507795998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_20
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1431
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be03aadcef5ee143b07ce6957c85291
+      internalID: 1810949603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_22
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1322
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bad3bbdbc5fbf4184d58c326797b56
+      internalID: -690503058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_23
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1390
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a39e7497364584ca8f0226f3ef2459
+      internalID: -760730800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_24
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1378
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7744c767cd8023546b07ca7128a6194e
+      internalID: 722524347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_25
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1320
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a3e13bfdc07e44fa860fc44d663126
+      internalID: 12294629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_26
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 1288
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d358487a22ff84984fc64603b2059c
+      internalID: 1057915015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_27
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 1254
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f23ae2640ae7fc43b7956eff2d88a07
+      internalID: -1029220747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1184
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db03639b05f8f7743a4a182d3c17c7a6
+      internalID: 1827131997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_29
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1154
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6541cf5e7890cc04eb1cf2ab50ed908c
+      internalID: 1261069946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_30
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1206
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b25036d89ad3649875e9a977f6b0cd
+      internalID: -849861323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_31
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1148
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cce62276b4389f48b0d95ca9639c0c8
+      internalID: 661832328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1174
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32d1e65d1d485478c446d1c12cafa3
+      internalID: -632768041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_35
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 1123
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78f95d2011632c4791cd1a60eaa09b8
+      internalID: -410815612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_36
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1110
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87d046bf89eab846a239a403b89b12c
+      internalID: 1652495745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_37
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1099
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7322e2db6bb4e5944b11cb50cc10cf09
+      internalID: -1900545723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_40
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 992
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac27082ac36b974aa0a8a2fa637d4a4
+      internalID: -2079190078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_41
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 1005
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82beb9c5918753f4dbf4aabf51950de0
+      internalID: 1809544821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_42
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 972
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd9b8f17f19ef440a9701ae46e2674e
+      internalID: 1280006723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_43
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 959
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd17f44efb322142bf8e26398253c67
+      internalID: 731661707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_44
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 940
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23972cf8b790e1245b05dbc623e51855
+      internalID: -1654063526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_45
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 927
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b60745ddb3712e4fab90f784b6ce79c
+      internalID: -1862562849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_47
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 839
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce69157e8e80bf64abff16ac4e163fa0
+      internalID: 2074470978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_48
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 888
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4de47f62811d4438c0d67ca2ebfcaa
+      internalID: -813421547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_51
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 801
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d05ed0a2d88c347bafd83d50b755a1
+      internalID: -1233820400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_52
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 726
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336ca0b9a8550f24e92f4b9a1f06771f
+      internalID: 1796086730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_53
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 691
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea8347826a61d841b8666a5c714f8da
+      internalID: 2042545358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_54
+      rect:
+        serializedVersion: 2
+        x: 3758
+        y: 725
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5564c9d050a143bcebf4ae847c423
+      internalID: -1616644858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_55
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 628
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bc6c2692001ca45b63b1011ad7d457
+      internalID: -1940220511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_56
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 578
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a7c5f6110379c42898cf371892652e
+      internalID: -155521551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_57
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 490
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e36c362f8ddd34eb6932750a9c290a
+      internalID: -1900235109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_58
+      rect:
+        serializedVersion: 2
+        x: 3454
+        y: 429
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faa0478cadd957438dfa242e016cb08
+      internalID: -610346853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_59
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 364
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f5206573b9b1240a4c7732b9b846f8
+      internalID: 411855122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_60
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 366
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb18b1e6b0b867e468e060d1b1a565ba
+      internalID: 1678013793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_61
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 398
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d42c73fd16ff0e4e9f896cb667b0f8c
+      internalID: 2123673901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_62
+      rect:
+        serializedVersion: 2
+        x: 3765
+        y: 365
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1e33f844e7a2d42af33a4e9a1d0f84
+      internalID: 208074751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_63
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 359
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26375006f83a5244bc41b4bdc36a7b6
+      internalID: -428844109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_65
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 332
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dd3d1f6decbe941abc066187f5d66e
+      internalID: -426787931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_66
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 359
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31383f19e9f6ada4eb11bc274bb77c32
+      internalID: 234691291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_67
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 280
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23696c27326661846a08de281acfeba5
+      internalID: 1436091446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_68
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 230
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81bbb0ca83b274479e1e9e3ec0683a8
+      internalID: 998413300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_69
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 276
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f268d198a19f4b4fbe58621dfe1a43a
+      internalID: 99526115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_70
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 235
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3bdb64a7daa144fa1b99d4a82fcf97
+      internalID: -1073900057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_71
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 241
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05d34d68e87d6245b920186317fbc41
+      internalID: -995537371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_72
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 216
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54750b1b859aa8c4cb5c1282769b25a7
+      internalID: -91598974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_73
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 190
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5887966be7e1cd48b69d71c50c12525
+      internalID: -939887560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_75
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 140
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2b8e633df06de4c9bc03721a7be96b
+      internalID: -1547373081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_77
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 55
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb8f4b1f3ee1bd44a36f7ed7088772f
+      internalID: -1825711880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_80
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 0
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c214b91faca2c4b8a960a88aac12c2
+      internalID: -1129036624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_81
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 0
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f385b226a219da4a9e087592c44fc3b
+      internalID: -2144838181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_82
+      rect:
+        serializedVersion: 2
+        x: 3124
+        y: 28
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3292b4261ad0644c837220212134b64
+      internalID: 299610983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_83
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 18
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3d271c73fb9e544836f7f962343d0f
+      internalID: 209299598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circles empty_84
+      rect:
+        serializedVersion: 2
+        x: 3124
+        y: 18
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbec66452d674b41984e6838262cd0a
+      internalID: -381341152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Circles empty_0: -3836880
+      Circles empty_1: 821901401
+      Circles empty_10: 1540884606
+      Circles empty_11: 1198999805
+      Circles empty_12: 496431823
+      Circles empty_13: 179909087
+      Circles empty_14: 365875390
+      Circles empty_15: 1154175981
+      Circles empty_16: 1336177165
+      Circles empty_17: 1806392400
+      Circles empty_18: -991333461
+      Circles empty_19: -507795998
+      Circles empty_2: 2087219554
+      Circles empty_20: 1810949603
+      Circles empty_21: 2015984883
+      Circles empty_22: -690503058
+      Circles empty_23: -760730800
+      Circles empty_24: 722524347
+      Circles empty_25: 12294629
+      Circles empty_26: 1057915015
+      Circles empty_27: -1029220747
+      Circles empty_28: 1827131997
+      Circles empty_29: 1261069946
+      Circles empty_3: 1763744765
+      Circles empty_30: -849861323
+      Circles empty_31: 661832328
+      Circles empty_32: -632768041
+      Circles empty_33: 914783870
+      Circles empty_34: 1419724092
+      Circles empty_35: -410815612
+      Circles empty_36: 1652495745
+      Circles empty_37: -1900545723
+      Circles empty_38: 1422345915
+      Circles empty_39: 496650935
+      Circles empty_4: 1130304315
+      Circles empty_40: -2079190078
+      Circles empty_41: 1809544821
+      Circles empty_42: 1280006723
+      Circles empty_43: 731661707
+      Circles empty_44: -1654063526
+      Circles empty_45: -1862562849
+      Circles empty_46: -1064342997
+      Circles empty_47: 2074470978
+      Circles empty_48: -813421547
+      Circles empty_49: 811104432
+      Circles empty_5: 1573259074
+      Circles empty_50: 122467931
+      Circles empty_51: -1233820400
+      Circles empty_52: 1796086730
+      Circles empty_53: 2042545358
+      Circles empty_54: -1616644858
+      Circles empty_55: -1940220511
+      Circles empty_56: -155521551
+      Circles empty_57: -1900235109
+      Circles empty_58: -610346853
+      Circles empty_59: 411855122
+      Circles empty_6: 1298830112
+      Circles empty_60: 1678013793
+      Circles empty_61: 2123673901
+      Circles empty_62: 208074751
+      Circles empty_63: -428844109
+      Circles empty_64: 601501309
+      Circles empty_65: -426787931
+      Circles empty_66: 234691291
+      Circles empty_67: 1436091446
+      Circles empty_68: 998413300
+      Circles empty_69: 99526115
+      Circles empty_7: 111986426
+      Circles empty_70: -1073900057
+      Circles empty_71: -995537371
+      Circles empty_72: -91598974
+      Circles empty_73: -939887560
+      Circles empty_74: 1270842130
+      Circles empty_75: -1547373081
+      Circles empty_76: -2064836890
+      Circles empty_77: -1825711880
+      Circles empty_78: -1596260492
+      Circles empty_79: 1677874652
+      Circles empty_8: -176333344
+      Circles empty_80: -1129036624
+      Circles empty_81: -2144838181
+      Circles empty_82: 299610983
+      Circles empty_83: 209299598
+      Circles empty_84: -381341152
+      Circles empty_9: 619496854
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

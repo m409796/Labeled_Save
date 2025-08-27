@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 19d1cc7ace723e449a48f4e012e87f00
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neck
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 898
+        width: 59
+        height: 59
+      alignment: 9
+      pivot: {x: 0.3569336, y: 0.33308852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65419aa9d42ef64aafee6b4aac971d4
+      internalID: 1087350190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 863
+        width: 167
+        height: 188
+      alignment: 9
+      pivot: {x: 0.39891043, y: 0.088429555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8fc91a5ff0b914baa57cac8137764f
+      internalID: 2117683391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right hand up
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 638
+        width: 68
+        height: 174
+      alignment: 9
+      pivot: {x: 0.41724554, y: 0.79106647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881b21408dc7f484c88f6c68c71fde1a
+      internalID: -1737737552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left hand up
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 598
+        width: 123
+        height: 169
+      alignment: 9
+      pivot: {x: 0.68300074, y: 0.8080022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea77b050328f540b4bf144ad416c0c
+      internalID: 1859240495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R thight foot
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 361
+        width: 134
+        height: 322
+      alignment: 9
+      pivot: {x: 0.54199404, y: 0.87136596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0f7f37cad2c3141a461c172c78c785
+      internalID: 694401191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 423
+        width: 165
+        height: 365
+      alignment: 9
+      pivot: {x: 0.46589503, y: 0.0952977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6669d0d32077a4d8bcad8ade7f079f
+      internalID: 59661148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R hand arm
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 365
+        width: 78
+        height: 199
+      alignment: 9
+      pivot: {x: 0.26552993, y: 0.874681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fe82095b5082c4593061a35d4f9613
+      internalID: 498705494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left hand down
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 360
+        width: 119
+        height: 181
+      alignment: 9
+      pivot: {x: 0.20444931, y: 0.8653072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c8b924f84a7c445a29599899b640fc
+      internalID: 252111917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ldown foot
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 102
+        width: 106
+        height: 279
+      alignment: 9
+      pivot: {x: 0.5132717, y: 0.8832204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d60e7e4ab8e3f149be6849dd324bfb9
+      internalID: -151481363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L thight foot
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 260
+        width: 106
+        height: 262
+      alignment: 9
+      pivot: {x: 0.35400966, y: 0.7631078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3e39cc55199f4439f7de936af56d39
+      internalID: 1897521591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R down foot
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 171
+        width: 108
+        height: 269
+      alignment: 9
+      pivot: {x: 0.5781555, y: 0.89223665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fec13c5b9b16754296cbf4cf6bdb5c8
+      internalID: 2061526219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      R hand arm: 498705494
+      R thight foot: 694401191
+      left hand up: 1859240495
+      head: 2117683391
+      right hand up: -1737737552
+      Ldown foot: -151481363
+      R down foot: 2061526219
+      L thight foot: 1897521591
+      neck: 1087350190
+      body: 59661148
+      left hand down: 252111917
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

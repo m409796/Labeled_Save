@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - playerWalking
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - foreground3
+  - foreground2
+  - foreground1
+  - ground
+  - background3
+  - background2
+  - background1
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background4
+    uniqueID: 1195553301
+    locked: 0
+  - name: background3
+    uniqueID: 1197209477
+    locked: 0
+  - name: background2
+    uniqueID: 3784085659
+    locked: 0
+  - name: background1
+    uniqueID: 908266785
+    locked: 0
+  - name: ground
+    uniqueID: 1156910289
+    locked: 0
+  - name: collectibles
+    uniqueID: 3286239107
+    locked: 0
+  - name: Player
+    uniqueID: 145135657
+    locked: 0
+  - name: foreground1
+    uniqueID: 542939375
+    locked: 0
+  - name: foreground2
+    uniqueID: 335160089
+    locked: 0
+  - name: foreground3
+    uniqueID: 2041077803
+    locked: 0
+  - name: texts
+    uniqueID: 3279433353
+    locked: 0
