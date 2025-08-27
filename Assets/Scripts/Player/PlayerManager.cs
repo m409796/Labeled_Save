@@ -13,7 +13,11 @@ public class PlayerManager : MonoBehaviour
     }
 
     public Rigidbody2D theRB;
-    public float moveSpeed = 5f;
+
+    [Header("Movement Speeds")]
+    public float walkSpeed = 4f; // Renamed for clarity and given a new default
+    public float runSpeed = 7f;  // NEW: The speed when holding the run key
+
     public bool canMove = true;
 
     void Start()
@@ -29,15 +33,19 @@ public class PlayerManager : MonoBehaviour
     {
         if (canMove)
         {
+            // Determine which speed to use
+            float currentMoveSpeed = walkSpeed; // Default to walk speed
+            if (Input.GetKey(KeyCode.LeftShift)) // Check if the Left Shift key is held down
+            {
+                currentMoveSpeed = runSpeed; // If so, use the run speed
+            }
+
             float horizontalInput = Input.GetAxisRaw("Horizontal");
-            theRB.velocity = new Vector2(horizontalInput * moveSpeed, theRB.velocity.y);
+            theRB.velocity = new Vector2(horizontalInput * currentMoveSpeed, theRB.velocity.y);
         }
         else
         {
             theRB.velocity = new Vector2(0, theRB.velocity.y);
         }
     }
-
-    // NOTE: The Flip() function and all Animator/SpriteRenderer logic has been removed.
-    // The ProceduralWalker.cs script now handles all visual flipping.
 }
