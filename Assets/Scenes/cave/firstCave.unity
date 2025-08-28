@@ -13489,48 +13489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a43df9be2c93a84696ea905427e9c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: f74eec297a0dac54980d8cc480a7f135, type: 2}
-  body: {fileID: 0}
-  neck: {fileID: 0}
-  head: {fileID: 0}
-  frontArm: {fileID: 0}
-  backArm: {fileID: 0}
-  frontLeg: {fileID: 0}
-  backLeg: {fileID: 0}
-  frontLowerArm: {fileID: 0}
-  backLowerArm: {fileID: 0}
-  frontLowerLeg: {fileID: 0}
-  backLowerLeg: {fileID: 0}
-  frontFoot: {fileID: 0}
-  backFoot: {fileID: 0}
-  eyes: {fileID: 0}
-  tailBase: {fileID: 0}
-  tailMid: {fileID: 0}
-  tailTip: {fileID: 0}
-  _initialBodyPos: {x: 0, y: 0, z: 0}
-  _initialHeadPos: {x: 0, y: 0, z: 0}
-  _initialNeckPos: {x: 0, y: 0, z: 0}
-  _initialEyesPos: {x: 0, y: 0, z: 0}
-  _initialFrontLegPos: {x: 0, y: 0, z: 0}
-  _initialBackLegPos: {x: 0, y: 0, z: 0}
-  _timer: 0
-  _currentCycleSpeed: 0
-  _currentLegSwingAngle: 0
-  _currentBodyBobAmount: 0
-  _currentLegLiftAmount: 0
-  _currentArmSwingAngle: 0
-  _currentKneeBendAngle: 0
-  _currentElbowDragAngle: 0
-  _currentHeadBobAmount: 0
-  _currentNeckSwingAngle: 0
-  _currentFootAngleMultiplier: 0
-  _currentTailSwingAngle: 0
-  _nextBlinkTime: 0
-  _blinkTimer: 0
-  _isBlinking: 0
-  _eyesSR: {fileID: 0}
-  _originalEyesSprite: {fileID: 0}
-  _originalEyesScale: {x: 0, y: 0, z: 0}
 --- !u!114 &1123683671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13631,48 +13589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a43df9be2c93a84696ea905427e9c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: f74eec297a0dac54980d8cc480a7f135, type: 2}
-  body: {fileID: 892064926}
-  neck: {fileID: 1111245837}
-  head: {fileID: 1584349815}
-  frontArm: {fileID: 260184721}
-  backArm: {fileID: 1604651183}
-  frontLeg: {fileID: 1528359670}
-  backLeg: {fileID: 1246985716}
-  frontLowerArm: {fileID: 1644584501}
-  backLowerArm: {fileID: 1354399865}
-  frontLowerLeg: {fileID: 1644041369}
-  backLowerLeg: {fileID: 1932225222}
-  frontFoot: {fileID: 1151255058}
-  backFoot: {fileID: 1444736291}
-  eyes: {fileID: 1748979472}
-  tailBase: {fileID: 534059766}
-  tailMid: {fileID: 0}
-  tailTip: {fileID: 0}
-  _initialBodyPos: {x: 0, y: 0, z: 0}
-  _initialHeadPos: {x: 0, y: 0, z: 0}
-  _initialNeckPos: {x: 0, y: 0, z: 0}
-  _initialEyesPos: {x: 0, y: 0, z: 0}
-  _initialFrontLegPos: {x: 0, y: 0, z: 0}
-  _initialBackLegPos: {x: 0, y: 0, z: 0}
-  _timer: 0
-  _currentCycleSpeed: 0
-  _currentLegSwingAngle: 0
-  _currentBodyBobAmount: 0
-  _currentLegLiftAmount: 0
-  _currentArmSwingAngle: 0
-  _currentKneeBendAngle: 0
-  _currentElbowDragAngle: 0
-  _currentHeadBobAmount: 0
-  _currentNeckSwingAngle: 0
-  _currentFootAngleMultiplier: 0
-  _currentTailSwingAngle: 0
-  _nextBlinkTime: 0
-  _blinkTimer: 0
-  _isBlinking: 0
-  _eyesSR: {fileID: 0}
-  _originalEyesSprite: {fileID: 0}
-  _originalEyesScale: {x: 0, y: 0, z: 0}
 --- !u!4 &1123683675
 Transform:
   m_ObjectHideFlags: 0
@@ -29431,7 +29347,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4287409787153081032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa1848fcf11101f43bc9df33c0a591ac, type: 3}
+  m_Script: {fileID: 11500000, guid: e8e9f833a1337c34d9f848e7de077c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   artFacesRight: 1
@@ -29440,14 +29356,8 @@ MonoBehaviour:
   head: {fileID: 3534418131425875992}
   frontArm: {fileID: 2673577908024833067}
   backArm: {fileID: 2865906690222368836}
-  frontLeg: {fileID: 335915418220665737}
-  backLeg: {fileID: 626587703837892768}
   frontLowerArm: {fileID: 6346932116775633650}
   backLowerArm: {fileID: 2467591181907332144}
-  frontLowerLeg: {fileID: 6700765228156471842}
-  backLowerLeg: {fileID: 644285069669928483}
-  frontFoot: {fileID: 5986385699299876311}
-  backFoot: {fileID: 4317829107836552340}
   eyes: {fileID: 5150697861220954095}
   tailBase: {fileID: 2369859402226996665}
   tailMid: {fileID: 0}
@@ -29455,59 +29365,41 @@ MonoBehaviour:
   walkCycleSpeed: 5.5
   bodyBobAmount: 0.04
   armSwingAngle: 20
-  legSwingAngle: 25
-  kneeBendAngle: 45
   elbowDragAngle: -20
-  legLiftAmount: 0.05
   headBobAmount: 0.04
   neckSwingAngle: 10
-  footAngleMultiplier: 0.5
   tailSwingAngle: 25
   tailSegmentDelay: 0.15
   runSpeedThreshold: 5
   runCycleSpeedMultiplier: 1.6
-  runLegSwingMultiplier: 1.5
   runBodyBobMultiplier: 1.15
-  runLegLiftMultiplier: 1.2
   idleProfile:
     cycleSpeed: 1.6500001
-    legSwingAngle: 1.25
     bodyBobAmount: 0.0139999995
-    legLiftAmount: 0.0025000002
-    armSwingAngle: 1
-    kneeBendAngle: 4.5
-    elbowDragAngle: -2
+    armSwingAngle: 4
+    elbowDragAngle: 1
     headBobAmount: 0.008
     neckSwingAngle: 2
-    footAngleMultiplier: 0.025
     tailSwingAngle: 5
   walkProfile:
-    cycleSpeed: 5.5
-    legSwingAngle: 25
+    cycleSpeed: 5
     bodyBobAmount: 0.04
-    legLiftAmount: 0.05
     armSwingAngle: 20
-    kneeBendAngle: 45
     elbowDragAngle: -20
-    headBobAmount: 0.04
-    neckSwingAngle: 10
-    footAngleMultiplier: 0.5
-    tailSwingAngle: 25
+    headBobAmount: 0.01
+    neckSwingAngle: 1
+    tailSwingAngle: 12
   runProfile:
     cycleSpeed: 8.8
-    legSwingAngle: 37.5
     bodyBobAmount: 0.045999996
-    legLiftAmount: 0.060000002
     armSwingAngle: 30
-    kneeBendAngle: 54.000004
     elbowDragAngle: -20
     headBobAmount: 0.045999996
     neckSwingAngle: 11
-    footAngleMultiplier: 0.5
     tailSwingAngle: 32.5
   useStateProfiles: 1
-  forceState: 0
-  forcedState: 0
+  forceState: 1
+  forcedState: 1
   idleBreathAmount: 0.02
   idleBreathFrequency: 0.8
   idleHeadDrift: 1.5
@@ -29517,74 +29409,8 @@ MonoBehaviour:
   blinkSprite: {fileID: 0}
   useBlinkSprite: 0
   parameterLerpSpeed: 6
-  rb: {fileID: 0}
+  rb: {fileID: 4287409787153081033}
   manualSpeed: 0
-  frontLegRotationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: -1
-      inSlope: 4
-      outSlope: 4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: -1
-      inSlope: -4
-      outSlope: -4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  backLegRotationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: -4
-      outSlope: -4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5
-      value: -1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 4
-      outSlope: 4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   frontArmRotationCurve:
     serializedVersion: 2
     m_Curve:
@@ -29651,142 +29477,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  kneeBendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 4
-      outSlope: 4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.25
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.75
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -4
-      outSlope: -4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   elbowBendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 4
-      outSlope: 4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.25
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.75
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -4
-      outSlope: -4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  footRotationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: -1
-      inSlope: 4
-      outSlope: 4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: -1
-      inSlope: -4
-      outSlope: -4
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  legLiftCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -29987,33 +29678,22 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  useLegIK: 1
+  frontThigh: {fileID: 335915418220665737}
+  frontShin: {fileID: 6700765228156471842}
+  frontFoot: {fileID: 5986385699299876311}
+  backThigh: {fileID: 626587703837892768}
+  backShin: {fileID: 644285069669928483}
+  backFoot: {fileID: 4317829107836552340}
+  stepLength: 0.8
+  stepHeight: 0.4
+  stepSpeed: 8
+  groundCheckDistance: 2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  groundCheckDistance: 0.5
-  kneePoleTargetOffset: {x: 0, y: -1}
-  ikWeightCurve:
+    m_Bits: 1024
+  stepHeightCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
