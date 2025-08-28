@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    // --- Singleton Instance ---
     private static PlayerManager instance;
     public static PlayerManager Instance
     {
@@ -12,40 +13,92 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    // --- Component References ---
+    [Header("Component References")]
     public Rigidbody2D theRB;
+    public ProceduralLegAnimation legAnimator;
+    public ProceduralWalker upperBodyAnimator;
 
+    // --- Movement Parameters ---
     [Header("Movement Speeds")]
-    public float walkSpeed = 4f; // Renamed for clarity and given a new default
-    public float runSpeed = 7f;  // NEW: The speed when holding the run key
-
+    public float walkSpeed = 4f;
+    public float runSpeed = 7f;
     public bool canMove = true;
 
+    // --- Character State ---
+    private bool isFacingRight = false; // The one and only change is on this line!
+
+    // --- Unity Methods ---
     void Start()
     {
+        // Automatically find components if they haven't been assigned in the Inspector.
         if (theRB == null)
         {
             theRB = GetComponent<Rigidbody2D>();
             Debug.LogWarning("PlayerManager: Rigidbody2D was not assigned, attempting to find it on the same GameObject.");
         }
+        if (legAnimator == null)
+        {
+            legAnimator = FindObjectOfType<ProceduralLegAnimation>();
+            Debug.LogWarning("PlayerManager: ProceduralLegAnimation was not assigned, attempting to find it in the scene.");
+        }
+        if (upperBodyAnimator == null)
+        {
+            upperBodyAnimator = FindObjectOfType<ProceduralWalker>();
+            Debug.LogWarning("PlayerManager: ProceduralWalker was not assigned, attempting to find it in the scene.");
+        }
     }
 
     void Update()
     {
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+
         if (canMove)
         {
-            // Determine which speed to use
-            float currentMoveSpeed = walkSpeed; // Default to walk speed
-            if (Input.GetKey(KeyCode.LeftShift)) // Check if the Left Shift key is held down
+            // 1. Handle Movement
+            float currentMoveSpeed = isRunning ? runSpeed : walkSpeed;
+            theRB.velocity = new Vector2(horizontalInput * currentMoveSpeed, theRB.velocity.y);
+
+            // 2. Handle Flipping
+            if (horizontalInput > 0 && !isFacingRight)
             {
-                currentMoveSpeed = runSpeed; // If so, use the run speed
+                Flip(); // Moving right but facing left, so flip.
+            }
+            else if (horizontalInput < 0 && isFacingRight)
+            {
+                Flip(); // Moving left but facing right, so flip.
             }
 
-            float horizontalInput = Input.GetAxisRaw("Horizontal");
-            theRB.velocity = new Vector2(horizontalInput * currentMoveSpeed, theRB.velocity.y);
+            // 3. Handle Animation State for BOTH Leg and Body Animators
+            upperBodyAnimator.forceState = true;
+
+            if (Mathf.Abs(horizontalInput) > 0.01f) // If the character is moving
+            {
+                legAnimator.currentState = isRunning ? AnimationState.Run : AnimationState.Walk;
+                upperBodyAnimator.forcedState = isRunning ? ProceduralWalker.MoveState.Run : ProceduralWalker.MoveState.Walk;
+            }
+            else
+            {
+                legAnimator.currentState = AnimationState.Idle;
+                upperBodyAnimator.forcedState = ProceduralWalker.MoveState.Idle;
+            }
         }
         else
         {
             theRB.velocity = new Vector2(0, theRB.velocity.y);
+            legAnimator.currentState = AnimationState.Idle;
+
+            upperBodyAnimator.forceState = true;
+            upperBodyAnimator.forcedState = ProceduralWalker.MoveState.Idle;
         }
+    }
+
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }

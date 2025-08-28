@@ -6211,7 +6211,7 @@ Transform:
   m_GameObject: {fileID: 553429452}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.9936137, w: -0.11283548}
-  m_LocalPosition: {x: -0.2618103, y: 0.36802912, z: 0}
+  m_LocalPosition: {x: -0.17, y: 0.391, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8068,6 +8068,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 687968896}
+  legAnimator: {fileID: 0}
+  upperBodyAnimator: {fileID: 0}
   walkSpeed: 4
   runSpeed: 7
   canMove: 1
@@ -10366,7 +10368,6 @@ MonoBehaviour:
   runBodyBobMultiplier: 1.15
   rb: {fileID: 0}
   manualSpeed: 0
-  legAnimator: {fileID: 0}
   idleProfile:
     cycleSpeed: 1.6500001
     bodyBobAmount: 0.0139999995
@@ -11422,6 +11423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 928893949}
+  legAnimator: {fileID: 0}
+  upperBodyAnimator: {fileID: 0}
   walkSpeed: 4
   runSpeed: 7
   canMove: 1
@@ -14197,6 +14200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 1123683672}
+  legAnimator: {fileID: 0}
+  upperBodyAnimator: {fileID: 0}
   walkSpeed: 4
   runSpeed: 7
   canMove: 1
@@ -22991,7 +22996,7 @@ Transform:
   m_GameObject: {fileID: 1899642075}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.98113525, w: 0.19332281}
-  m_LocalPosition: {x: 0.37786484, y: 0.40195084, z: 0}
+  m_LocalPosition: {x: 0.365, y: 0.422, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28046,7 +28051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8018747371804841747}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.65103966, w: -0.7590438}
+  m_LocalRotation: {x: -0, y: -0, z: 0.6891798, w: -0.7245905}
   m_LocalPosition: {x: 0.6894753, y: 0.00000020237984, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -29908,7 +29913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2335096985595265942}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.60743624, w: 0.7943684}
+  m_LocalRotation: {x: -0, y: -0, z: -0.68974745, w: 0.72405}
   m_LocalPosition: {x: 0.683805, y: -0.00000000876891, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31872,6 +31877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 4287409787153081033}
+  legAnimator: {fileID: 0}
+  upperBodyAnimator: {fileID: 0}
   walkSpeed: 4
   runSpeed: 7
   canMove: 1
@@ -31912,7 +31919,6 @@ MonoBehaviour:
   runBodyBobMultiplier: 1.15
   rb: {fileID: 4287409787153081033}
   manualSpeed: 0
-  legAnimator: {fileID: 0}
   idleProfile:
     cycleSpeed: 1.6500001
     bodyBobAmount: 0.0139999995
@@ -32406,6 +32412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 4287409787153081033}
+  legAnimator: {fileID: 0}
+  upperBodyAnimator: {fileID: 0}
   walkSpeed: 4
   runSpeed: 7
   canMove: 1
@@ -32518,7 +32526,6 @@ MonoBehaviour:
   runBodyBobMultiplier: 1.15
   rb: {fileID: 4439250374873053443}
   manualSpeed: 0
-  legAnimator: {fileID: 0}
   idleProfile:
     cycleSpeed: 1.6500001
     bodyBobAmount: 0.0139999995
@@ -33651,7 +33658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6639642992742491737}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0, z: 0.76745844, w: -0.64109874}
+  m_LocalRotation: {x: 0, y: 0, z: 0.79604596, w: -0.6052363}
   m_LocalPosition: {x: -0.124313354, y: 1.6641433, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33967,7 +33974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2629706773422689911}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.06991934, w: 0.9975527}
+  m_LocalRotation: {x: 0, y: 0, z: 0.22228153, w: 0.9749826}
   m_LocalPosition: {x: 0.6227725, y: -0.00000012144054, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34503,14 +34510,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8229755375871125505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.086524874, w: 0.99624974}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19907585, w: 0.97998405}
   m_LocalPosition: {x: 0.6480231, y: -0.000004945441, z: 0}
   m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1377364364806717743}
   m_Father: {fileID: 5777807249151747021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.987}
 --- !u!4 &5734169842031553722
 Transform:
   m_ObjectHideFlags: 0
@@ -34608,7 +34615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6303050971152973966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.68450797, w: -0.7290054}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7286214, w: -0.6849167}
   m_LocalPosition: {x: 0.17575073, y: 1.7190199, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36181,6 +36188,7 @@ GameObject:
   - component: {fileID: 8132031893707258640}
   - component: {fileID: 8132031893707258639}
   - component: {fileID: 8132031893707258643}
+  - component: {fileID: 8132031893707258644}
   m_Layer: 0
   m_Name: Robert 1 side-3 2 (2)
   m_TagString: Untagged
@@ -38150,9 +38158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872bf6621716d5147980e74318be422c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRB: {fileID: 4287409787153081033}
-  walkSpeed: 4
-  runSpeed: 7
+  theRB: {fileID: 8132031893707258641}
+  legAnimator: {fileID: 8132031893707258644}
+  upperBodyAnimator: {fileID: 8132031893707258642}
+  walkSpeed: 3
+  runSpeed: 6
   canMove: 1
 --- !u!61 &8132031893707258640
 BoxCollider2D:
@@ -38186,7 +38196,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.44559503}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -38197,7 +38207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.37616682}
   m_EdgeRadius: 0
 --- !u!50 &8132031893707258641
 Rigidbody2D:
@@ -38263,7 +38273,6 @@ MonoBehaviour:
   runBodyBobMultiplier: 1.15
   rb: {fileID: 0}
   manualSpeed: 0
-  legAnimator: {fileID: 0}
   idleProfile:
     cycleSpeed: 1.6500001
     bodyBobAmount: 0.0139999995
@@ -38588,6 +38597,32 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!114 &8132031893707258644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6922839912846336877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccf20c7c544a96489c5da0fe6b41a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  frontLegTarget: {fileID: 1899642076}
+  backLegTarget: {fileID: 553429453}
+  frontLegHip: {fileID: 5777807249151747021}
+  frontLegShin: {fileID: 5710694585993208549}
+  backLegHip: {fileID: 5093976477484442283}
+  backLegShin: {fileID: 5211970838767141858}
+  stepHeight: 0.1
+  adaptationSpeed: 10
+  ikSmoothingSpeed: 20
+  walkStepLength: 0.5
+  walkAnimationSpeed: 5
+  runStepLength: 1.2
+  runAnimationSpeed: 8
 --- !u!4 &8177534326117338453
 Transform:
   m_ObjectHideFlags: 0
