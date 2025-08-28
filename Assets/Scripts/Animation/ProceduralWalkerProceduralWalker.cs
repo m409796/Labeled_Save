@@ -38,6 +38,11 @@ public class ProceduralWalker : MonoBehaviour
     public float runCycleSpeedMultiplier = 1.6f;
     public float runBodyBobMultiplier = 1.15f;
 
+    [Header("Input Source")]
+    public Rigidbody2D rb;
+    public float manualSpeed = 0f;
+    [Tooltip("Animator for controlling the legs manually.")]
+    public Animator legAnimator; // Add this line!
     // New: per-state profiles for fine control in the Inspector
     [System.Serializable]
     public class MotionProfile
@@ -79,10 +84,6 @@ public class ProceduralWalker : MonoBehaviour
     // --- Smoothing ---
     [Header("Smoothing")]
     public float parameterLerpSpeed = 6f;
-
-    [Header("Input Source")]
-    public Rigidbody2D rb;
-    public float manualSpeed = 0f;
 
     // --- ANIMATION CURVES ---
     [Header("Animation Curves (The 'Animator')")]
@@ -193,7 +194,10 @@ public class ProceduralWalker : MonoBehaviour
     {
         float currentSpeed = rb != null ? Mathf.Abs(rb.velocity.x) : Mathf.Abs(manualSpeed);
         float horizontalInput = rb != null ? rb.velocity.x : manualSpeed;
-
+        if (legAnimator != null)
+        {
+            legAnimator.SetFloat("horizontalSpeed", currentSpeed);
+        }
         // 1. Determine Character State (Idle, Walk, Run)
         if (forceState)
         {
