@@ -26,7 +26,7 @@ public class PlayerManager : MonoBehaviour
     public bool canMove = true;
 
     // --- Character State ---
-    private bool isFacingRight = false; // The one and only change is on this line!
+    private bool isFacingRight = false;
 
     // --- Unity Methods ---
     void Start()
@@ -60,7 +60,12 @@ public class PlayerManager : MonoBehaviour
             float currentMoveSpeed = isRunning ? runSpeed : walkSpeed;
             theRB.velocity = new Vector2(horizontalInput * currentMoveSpeed, theRB.velocity.y);
 
-            // 2. Handle Flipping
+            // 2. <<-- NEW -->> Sync Animation Speed with Rigidbody Velocity
+            // This is the key change: we read the actual horizontal speed from the Rigidbody
+            // and pass it to the leg animator to prevent foot sliding.
+            legAnimator.currentWorldSpeed = Mathf.Abs(theRB.velocity.x);
+
+            // 3. Handle Flipping
             if (horizontalInput > 0 && !isFacingRight)
             {
                 Flip(); // Moving right but facing left, so flip.
@@ -70,7 +75,7 @@ public class PlayerManager : MonoBehaviour
                 Flip(); // Moving left but facing right, so flip.
             }
 
-            // 3. Handle Animation State for BOTH Leg and Body Animators
+            // 4. Handle Animation State for BOTH Leg and Body Animators
             upperBodyAnimator.forceState = true;
 
             if (Mathf.Abs(horizontalInput) > 0.01f) // If the character is moving
@@ -88,6 +93,9 @@ public class PlayerManager : MonoBehaviour
         {
             theRB.velocity = new Vector2(0, theRB.velocity.y);
             legAnimator.currentState = AnimationState.Idle;
+
+            // <<-- NEW -->> Ensure animation speed is zeroed out when movement is disabled.
+            legAnimator.currentWorldSpeed = 0f;
 
             upperBodyAnimator.forceState = true;
             upperBodyAnimator.forcedState = ProceduralWalker.MoveState.Idle;
