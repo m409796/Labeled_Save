@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum AnimationState { Idle, Walk, Run }
 
@@ -21,30 +21,61 @@ public class ProceduralLegAnimation : MonoBehaviour
     [Tooltip("The lower bone of the back leg.")]
     public Transform backLegShin;
 
-    [Header("Animation Curve")]
-    [Tooltip("Controls the height profile of a step during its swing phase. X-axis is normalized time (0 to 1), Y-axis is the height multiplier.")]
+    [Header("Natural Walking Curves")]
+    [Tooltip("Controls the height profile during swing phase. More natural arch.")]
     public AnimationCurve stepHeightCurve = new AnimationCurve(
-        new Keyframe(0.0f, 0.0f, 0f, 0f),
-        new Keyframe(0.5f, 1.0f, 0f, 0f),
-        new Keyframe(1.0f, 0.0f, 0f, 0f)
+        new Keyframe(0.0f, 0.0f, 0f, 2f),    // Start on ground, slight lift
+        new Keyframe(0.3f, 0.8f, 0f, 0f),    // Peak earlier for natural step
+        new Keyframe(0.7f, 0.6f, 0f, 0f),    // Slight dip (foot preparing to land)
+        new Keyframe(1.0f, 0.0f, -2f, 0f)    // Land with slight forward motion
     );
 
-    [Header("Shared Parameters")]
+    [Tooltip("Controls horizontal movement during swing. Creates natural stride.")]
+    public AnimationCurve stepStrideCurve = new AnimationCurve(
+        new Keyframe(0.0f, -1.0f, 0f, 0f),   // Start at back of stride
+        new Keyframe(0.2f, -0.7f, 2f, 2f),   // Quick acceleration forward
+        new Keyframe(0.8f, 0.7f, 2f, 2f),    // Continue forward motion
+        new Keyframe(1.0f, 1.0f, 0f, 0f)     // End at front of stride
+    );
+
+    [Tooltip("Controls stance phase horizontal movement (foot on ground).")]
+    public AnimationCurve stanceMoveCurve = new AnimationCurve(
+        new Keyframe(0.0f, 1.0f, 0f, 0f),    // Foot plants forward
+        new Keyframe(0.5f, 0.0f, -2f, -2f),  // Moves to center
+        new Keyframe(1.0f, -1.0f, 0f, 0f)    // Pushes off from back
+    );
+
+    [Header("Human-like Parameters")]
     public float stepHeight = 0.4f;
     public float adaptationSpeed = 10.0f;
-    [Tooltip("Time in seconds for the IK target to smoothly reach its goal. Lower values are faster/snappier.")]
-    public float smoothTime = 0.05f;
-    [Tooltip("Prevents knee snapping by keeping the leg slightly bent. 1.0 = fully extended, 0.98 = 98% of max reach.")]
+    [Tooltip("Time in seconds for smooth IK transitions.")]
+    public float smoothTime = 0.08f;
     [Range(0.8f, 1.0f)]
     public float maxExtensionMargin = 0.98f;
 
+    [Header("Walking Dynamics")]
+    [Tooltip("Stance phase takes this percentage of the full cycle (60% is natural).")]
+    [Range(0.4f, 0.8f)]
+    public float stancePhaseRatio = 0.6f;
+
+    [Tooltip("Adds slight randomness to step timing for natural variation.")]
+    [Range(0f, 0.1f)]
+    public float stepTimingVariation = 0.03f;
+
+    [Tooltip("Forward lean amount during walking (creates momentum feel).")]
+    [Range(0f, 0.2f)]
+    public float forwardLeanOffset = 0.05f;
+
+    [Tooltip("Weight shift during stance phase.")]
+    [Range(0f, 0.1f)]
+    public float weightShiftAmount = 0.03f;
 
     [Tooltip("The actual horizontal speed of the character, controlled by an external script like PlayerManager.")]
     public float currentWorldSpeed = 0f;
     public float multimplierSpeed = 0.5f;
+
     [Header("Walk Parameters")]
     public float walkStepLength = 0.8f;
-    // walkAnimationSpeed is now removed
 
     [Header("Run Parameters")]
     public float runStepLength = 1.2f;
@@ -63,6 +94,11 @@ public class ProceduralLegAnimation : MonoBehaviour
     private Vector3 _frontLegVelocity;
     private Vector3 _backLegVelocity;
 
+    // Natural walking variables
+    private float _frontLegPhaseOffset;
+    private float _backLegPhaseOffset;
+    private float _nextVariationTime;
+
     void Start()
     {
         _frontLegHomePos = frontLegTarget.localPosition;
@@ -74,12 +110,15 @@ public class ProceduralLegAnimation : MonoBehaviour
 
         _currentFrontTargetPos = frontLegTarget.position;
         _currentBackTargetPos = backLegTarget.position;
+
+        // Initialize phase offsets for natural variation
+        _frontLegPhaseOffset = 0f;
+        _backLegPhaseOffset = Mathf.PI; // Back leg starts opposite
+        _nextVariationTime = Time.time + 2f;
     }
 
     void Update()
     {
-        // The logic for calculating animation speed is now inside AnimateLegs,
-        // so we just pass the step length directly.
         switch (currentState)
         {
             case AnimationState.Idle:
@@ -105,55 +144,84 @@ public class ProceduralLegAnimation : MonoBehaviour
         _animationTime += Time.deltaTime * speed;
         _currentStepLength = Mathf.Lerp(_currentStepLength, targetStepLength, Time.deltaTime * adaptationSpeed);
 
-        // --- Calculate Desired Leg Positions ---
+        // Add subtle timing variations for natural feel
+        if (Time.time > _nextVariationTime && stepTimingVariation > 0)
+        {
+            _frontLegPhaseOffset += Random.Range(-stepTimingVariation, stepTimingVariation);
+            _backLegPhaseOffset += Random.Range(-stepTimingVariation, stepTimingVariation);
+            _nextVariationTime = Time.time + Random.Range(1.5f, 3f);
+        }
 
-        // Forward/backward motion (X-axis) using a sine wave for smooth oscillation
-        float frontLegX = -Mathf.Sin(_animationTime) * _currentStepLength / 2f;
-        float backLegX = -Mathf.Sin(_animationTime + Mathf.PI) * _currentStepLength / 2f;
+        // Calculate individual leg phases
+        float frontLegPhase = _animationTime + _frontLegPhaseOffset;
+        float backLegPhase = _animationTime + _backLegPhaseOffset;
 
-        // Upward motion (Y-axis) using the customizable AnimationCurve
-        // A leg lifts during its "swing phase" (moving from back to front)
-        float frontLegY = CalculateSwingHeight(_animationTime);
-        float backLegY = CalculateSwingHeight(_animationTime + Mathf.PI);
+        // --- Calculate Natural Leg Positions ---
+        Vector3 frontLegOffset = CalculateNaturalLegMotion(frontLegPhase, true);
+        Vector3 backLegOffset = CalculateNaturalLegMotion(backLegPhase, false);
 
-        // Combine into a local offset and then transform to world space
-        Vector3 desiredFrontPos = transform.TransformPoint(_frontLegHomePos + new Vector3(frontLegX, frontLegY, 0));
-        Vector3 desiredBackPos = transform.TransformPoint(_backLegHomePos + new Vector3(backLegX, backLegY, 0));
+        // Apply forward lean for momentum feel
+        frontLegOffset.x += forwardLeanOffset;
+        backLegOffset.x += forwardLeanOffset;
+
+        // Transform to world space
+        Vector3 desiredFrontPos = transform.TransformPoint(_frontLegHomePos + frontLegOffset);
+        Vector3 desiredBackPos = transform.TransformPoint(_backLegHomePos + backLegOffset);
 
         // --- Knee Safety Clamp ---
-        // Prevent the leg from fully extending to avoid knee snapping
         desiredFrontPos = ClampToMaxReach(desiredFrontPos, frontLegHip.position, _frontLegMaxReach);
         desiredBackPos = ClampToMaxReach(desiredBackPos, backLegHip.position, _backLegMaxReach);
 
         // --- Smooth IK Movement ---
-        // Use SmoothDamp for frame-rate independent, natural-looking smoothing
         _currentFrontTargetPos = Vector3.SmoothDamp(_currentFrontTargetPos, desiredFrontPos, ref _frontLegVelocity, smoothTime);
         _currentBackTargetPos = Vector3.SmoothDamp(_currentBackTargetPos, desiredBackPos, ref _backLegVelocity, smoothTime);
 
-        // Apply the final positions to the IK targets
         frontLegTarget.position = _currentFrontTargetPos;
         backLegTarget.position = _currentBackTargetPos;
     }
 
-    private float CalculateSwingHeight(float time)
+    private Vector3 CalculateNaturalLegMotion(float legPhase, bool isFrontLeg)
     {
-        // Determine our position in the full animation cycle (0 to 2*PI)
-        float cycleTime = Mathf.Repeat(time, 2f * Mathf.PI);
+        // Normalize phase to 0-2π cycle
+        float normalizedPhase = Mathf.Repeat(legPhase, 2f * Mathf.PI);
+        float cycleProgress = normalizedPhase / (2f * Mathf.PI);
 
-        // The swing phase (leg in the air) happens in the second half of the cycle,
-        // as the leg moves from the rearmost point back to the front.
-        // This corresponds to the cycle time being between PI and 2*PI.
-        if (cycleTime > Mathf.PI)
+        // Determine if leg is in stance (on ground) or swing (in air) phase
+        bool isInSwingPhase = cycleProgress > stancePhaseRatio;
+
+        float legX, legY;
+
+        if (isInSwingPhase)
         {
-            // We are in the swing phase.
-            // We'll map the current time in this phase to a 0-1 value
-            // to sample the AnimationCurve correctly.
-            float swingProgress = (cycleTime - Mathf.PI) / Mathf.PI;
-            return stepHeightCurve.Evaluate(swingProgress) * stepHeight;
+            // SWING PHASE: Leg is in the air, moving forward to next step
+            float swingProgress = (cycleProgress - stancePhaseRatio) / (1f - stancePhaseRatio);
+
+            // CORRECTED: During swing, leg moves from back to front (negative curve value)
+            legX = -stepStrideCurve.Evaluate(swingProgress) * _currentStepLength / 2f;
+
+            // Use height curve for vertical movement
+            legY = stepHeightCurve.Evaluate(swingProgress) * stepHeight;
+        }
+        else
+        {
+            // STANCE PHASE: Leg is on ground, body moves over it
+            float stanceProgress = cycleProgress / stancePhaseRatio;
+
+            // CORRECTED: During stance, foot slides from front to back as body moves forward
+            legX = -stanceMoveCurve.Evaluate(stanceProgress) * _currentStepLength / 2f;
+
+            // Slight weight shift during stance
+            legY = -weightShiftAmount * Mathf.Sin(stanceProgress * Mathf.PI);
         }
 
-        // If we're not in the swing phase, the foot is on the ground.
-        return 0f;
+        // Add subtle asymmetry between front and back legs
+        if (!isFrontLeg)
+        {
+            legX *= 0.95f; // Back leg slightly shorter stride
+            legY *= 1.05f; // Back leg slightly higher lift
+        }
+
+        return new Vector3(legX, legY, 0);
     }
 
     private Vector3 ClampToMaxReach(Vector3 desiredPos, Vector3 hipPosition, float maxReach)
@@ -161,20 +229,16 @@ public class ProceduralLegAnimation : MonoBehaviour
         float currentDistance = Vector3.Distance(desiredPos, hipPosition);
         if (currentDistance > maxReach * maxExtensionMargin)
         {
-            // If the desired position is too far, we first find the clamped position.
             Vector3 directionFromHip = (desiredPos - hipPosition).normalized;
             Vector3 clampedPos = hipPosition + directionFromHip * (maxReach * maxExtensionMargin);
 
             // THE FIX: Add a small upward nudge to the clamped position.
-            // This ensures the knee always has a slight, consistent bend direction, preventing the snap.
-            // You can adjust the 0.05f value if needed, but it should be small.
             Vector3 upwardNudge = transform.up * 0.05f;
 
             return clampedPos + upwardNudge;
         }
         return desiredPos;
     }
-
 
     private void ReturnLegsToHome()
     {
@@ -194,6 +258,9 @@ public class ProceduralLegAnimation : MonoBehaviour
         if (_currentStepLength < 0.01f)
         {
             _animationTime = 0;
+            // Reset phase offsets when returning to idle
+            _frontLegPhaseOffset = 0f;
+            _backLegPhaseOffset = Mathf.PI;
         }
     }
 }
